@@ -43,7 +43,7 @@
 };
 
 &trackball_listener {
-    scroller5: scroller {
+    scroller_5 {
         layers = <5>; // スクロールレイヤー5
         input-processors = <
             &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)
@@ -52,7 +52,7 @@
         >;
     };
 
-    scroller6: scroller {
+    scroller_6 {
         layers = <6>; // スクロールレイヤー6
         input-processors = <
             &zip_scroll_scaler 4 2
