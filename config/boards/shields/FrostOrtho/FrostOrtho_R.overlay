@@ -20,8 +20,6 @@
 &zip_temp_layer {
     require-prior-idle-ms = <500>;
     excluded-positions = <
-        5 // Y
-        6 // U
         7 // I
         15 // h
         19 // -
@@ -49,7 +47,7 @@
         layers = <5>; // スクロールレイヤー
         input-processors = <
             &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT) // スクロール方向調整
-            &zip_scroll_scaler 2 1 // スクロール量2倍
+            &zip_scroll_scaler 8 2 // スクロール量2倍
             &zip_xy_to_scroll_mapper
         >;
     };
