@@ -44,10 +44,20 @@
 
 &trackball_listener {
     scroller {
-        layers = <6>; // スクロールレイヤー
+        layers = <5>; // スクロールレイヤー
         input-processors = <
             &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT) // スクロール方向調整
-            &zip_scroll_scaler 8 2 // スクロール量2倍
+            &zip_scroll_scaler 4 3 // スクロール量2倍
+            &zip_xy_to_scroll_mapper
+        >;
+    };
+};
+
+&trackball_listener {
+    scroller {
+        layers = <6>; // スクロールレイヤー
+        input-processors = <
+            &zip_scroll_scaler 4 2 // スクロール量2倍
             &zip_xy_to_scroll_mapper
         >;
     };
