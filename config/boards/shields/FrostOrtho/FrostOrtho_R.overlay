@@ -47,15 +47,7 @@
         layers = <5>; // スクロールレイヤー5
         input-processors = <
             &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)
-            &zip_scroll_scaler 4 3
-            &zip_xy_to_scroll_mapper
-        >;
-    };
-
-    scroller_6 {
-        layers = <6>; // スクロールレイヤー6
-        input-processors = <
-            &zip_scroll_scaler 4 2
+            &zip_scroll_scaler 2 3
             &zip_xy_to_scroll_mapper
         >;
     };
