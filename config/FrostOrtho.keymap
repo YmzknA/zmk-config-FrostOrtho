@@ -31,7 +31,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&to 8>,
+                <&to 7>,
                 <&macro_press>,
                 <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>,
                 <&macro_release>,
@@ -43,7 +43,7 @@
         shift_click: shift_click {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 7>, <&macro_press>, <&mkp MB3 &kp LEFT_SHIFT>;
+            bindings = <&to 6>, <&macro_press>, <&mkp MB3 &kp LEFT_SHIFT>;
 
             label = "SHIFT_CLICK";
         };
@@ -74,7 +74,7 @@
         default_layer {
             bindings = <
 &kp Q                 &kp W         &kp E         &kp R             &kp T                         &kp Y        &kp U          &kp I      &kp O            &kp P
-&kp A                 &kp S         &kp D         &kp F             &kp G                         &lt 6 H      &kp J          &kp K      &kp L            &kp SEMI
+&kp A                 &kp S         &kp D         &kp F             &kp G                         &kp H        &kp J          &kp K      &kp L            &kp SEMI
 &mt LEFT_SHIFT Z      &kp X         &kp C         &kp V             &kp B                         &kp N        &kp M          &kp COMMA  &kp PERIOD       &kp MINUS
 &mt LEFT_CONTROL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 LANG_HANJA  &lt 2 LANG1  &lt 3 SPACE      &lt 1 ENTER  &kp BACKSPACE  &kp ESC    &lt 5 BACKSLASH  &mt LEFT_ALT SLASH
             >;
@@ -139,17 +139,6 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans              &trans    &trans  &mkp MB3  &trans  &trans
@@ -168,6 +157,8 @@
 &trans     &screenshot  &kp LC(INS)  &kp LS(INS)  &trans              &trans  &trans  &trans  &trans  &trans
 &trans     &trans       &trans       &trans       &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
 };
