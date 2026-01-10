@@ -44,7 +44,7 @@
 
 &trackball_listener {
     scroller {
-        layers = <5>; // スクロールレイヤー
+        layers = <6>; // スクロールレイヤー
         input-processors = <
             &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT) // スクロール方向調整
             &zip_scroll_scaler 8 2 // スクロール量2倍
