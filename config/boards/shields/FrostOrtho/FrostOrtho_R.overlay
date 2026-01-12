@@ -20,8 +20,8 @@
 &zip_temp_layer {
     require-prior-idle-ms = <500>;
     excluded-positions = <
-        7 // I
         15 // H
+        27 // ,
         29 // -
         20 // Z Shift
         30 // Control
