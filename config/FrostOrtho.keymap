@@ -119,10 +119,10 @@
 
         layer_4 {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans               &kp LS(LC(TAB))  &trans    &kp LC(TAB)      &trans     &trans
-&kp HOME        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END              &kp LEFT_ARROW   &kp DOWN  &kp UP           &kp RIGHT  &trans
-&kp LEFT_SHIFT  &trans           &trans          &trans           &trans               &kp LG(TAB)      &trans    &kp LG(LS(TAB))  &trans     &trans
-&trans          &trans           &trans          &trans           &trans   &trans      &mkp MB4         &trans    &mkp MB5         &trans     &kp ESC
+&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans               &kp LS(LC(TAB))  &trans           &kp LC(TAB)  &trans     &trans
+&kp HOME        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END              &kp LEFT_ARROW   &kp DOWN         &kp UP       &kp RIGHT  &trans
+&kp LEFT_SHIFT  &trans           &trans          &trans           &trans               &kp LG(TAB)      &kp LS(LG(TAB))  &trans       &trans     &trans
+&trans          &trans           &trans          &trans           &trans   &trans      &mkp MB4         &mkp MB5         &trans       &trans     &kp ESC
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -130,8 +130,8 @@
 
         BT {
             bindings = <
-&kp ESC  &trans  &trans  &trans  &trans              &trans        &trans        &mkp MB3      &trans        &trans
-&kp TAB  &trans  &trans  &trans  &trans              &trans        &mkp MB1      &trans        &mkp MB2      &trans
+&kp ESC  &trans  &trans  &trans  &trans              &trans        &trans        &trans        &trans        &trans
+&kp TAB  &trans  &trans  &trans  &trans              &trans        &trans        &trans        &trans        &trans
 &trans   &trans  &trans  &trans  &trans              &trans        &trans        &trans        &trans        &trans
 &trans   &trans  &trans  &trans  &trans  &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
             >;
