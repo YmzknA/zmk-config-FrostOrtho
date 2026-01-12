@@ -20,11 +20,7 @@
 &zip_temp_layer {
     require-prior-idle-ms = <500>;
     excluded-positions = <
-        7 // I
-        15 // H
-        18 // L
-        20 // Z Shift
-        30 // Control
+      // AML使わないので削除
     >;
 };
 
