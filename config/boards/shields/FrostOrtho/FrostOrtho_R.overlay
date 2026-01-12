@@ -22,7 +22,7 @@
     excluded-positions = <
         7 // I
         15 // H
-        18 // L
+        29 // -
         20 // Z Shift
         30 // Control
     >;
